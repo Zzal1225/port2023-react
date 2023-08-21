@@ -1,9 +1,10 @@
 # 리액트를 이용한 반응형 사이트 만들기
 
 ##완성작 보기
-주소 : 
+주소 :
 
 ## 사용 스택
+
 - react(https://ko.legacy.reactjs.org/) 를 사용하여 사이트를 번들링하고 관리합니다.
 - gsap(https://greensock.com/gsap) 를 이용하여 패럴랙스 효과를 줍니다.
 - lenis(https://lenis.studiofreight.com/) 를 이용하여 스므스 효과를 구현합니다.
@@ -12,10 +13,12 @@
 
 1. 셋팅하기
 
-터미널을 열고 작성한다.
+1-1. 터미널을 열고 작성한다.
+
 $ npx create-react-app port2023-react
 
-아래와 같은 메세지가 뜨면 cd port2023-react를 입력한 후 npm start를 입력한다.
+1-2. 아래와 같은 메세지가 뜨면 cd port2023-react를 입력한 후 npm start를 입력한다.
+
 - Success! Created port2023-react at /Users/webstoryboy/Desktop/port2023/port2023-react
   Inside that directory, you can run several commands:
 
@@ -39,9 +42,17 @@ We suggest that you begin by typing:
 
 Happy hacking!
 
-필요한 라이브러리 설치하기
+1-3. 필요한 라이브러리 설치하기
+
 $ npm install react-router-dom
 $ npm install gsap
 $ npm install sass
 $ npm install @studio-freight/lenis
+
+2. 라우팅 및 컴퍼넌트 설정
+
+2-1. 라우팅 설정하기(App.js)
+2-2. 컴퍼넌트 설정하기
+2-3. SCSS 폴더 및 파일 설정하기
+
 

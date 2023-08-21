@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+//setting
+@import "setting/fonts";
+@import "setting/mixin";
+@import "setting/reset";
+@import "setting/ani";
+
+//section
+@import "section/article";
+@import "section/brand";
+@import "section/footer";
+@import "section/header";
+@import "section/gallery";
+@import "section/landmark";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+#wrap {
+  overflow: hidden;
+  min-width: 360px;
+  position: relative;
+}
+
+#main {
+  max-width: calc(100% - 10.416%);
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  left: 2.604%;
+  top: 0;
+  z-index: 999;
+}
+
+/* left: 50px; */
+#wrap:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  right: 2.604%;
+  top: 0;
+  z-index: 9999;
+}
+
+.inner {
+  max-width: calc(100% - 10.416%);
+  margin: 0 auto;
+}
