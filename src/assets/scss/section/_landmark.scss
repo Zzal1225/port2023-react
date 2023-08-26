@@ -1,0 +1,114 @@
+#landmark {
+  padding: 5.208% 0;
+  border-bottom: 1px solid #ddd;
+  .inner {
+    max-width: calc(100% - 31.25%);
+    @media all and (max-width: 1400px) {
+      max-width: calc(100% - 20.833%);
+    }
+    @media all and (max-width: 1200px) {
+      max-width: calc(100% - 41.25%);
+    }
+    ul {
+      @media all and (max-width: 1200px) {
+        li:not(:first-child) {
+          display: none;
+        }
+      }
+      li {
+        float: left;
+        margin-right: 50px;
+        width: calc((100% - 100px) / 3);
+        position: relative;
+        overflow: hidden;
+        @media all and (max-width: 1200px) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          margin-top: 50px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover dl {
+          top: 45%;
+          @media all and (max-width: 1200px) {
+            top: 55%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        span {
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #fff;
+          background: #000;
+          padding: 20px 40px;
+          @media all and (max-width: 400px) {
+            padding: 10px 20px;
+          }
+        }
+        dl {
+          transition: top 0.5s;
+          position: absolute;
+          left: 0;
+          top: 80%;
+          background: rgba(255, 255, 255, 1);
+          padding: 30px;
+          width: 80%;
+          height: 100%;
+          word-break: keep-all;
+          @media all and (max-width: 400px) {
+            padding: 10px;
+          }
+          dt {
+            font-size: 2.6rem;
+            font-weight: 600;
+            @media all and (max-width: 400px) {
+              font-size: 1.8rem;
+            }
+          }
+          dd {
+            padding-top: 30px;
+            font-size: 1.8rem;
+            color: #999;
+            @media all and (max-width: 1200px) {
+              display: none;
+            }
+          }
+          .btn_view {
+            font-size: 2rem;
+            color: #999;
+            text-decoration: underline;
+            font-family: "DM Serif Text";
+          }
+        }
+      }
+    }
+    .btn_more {
+      display: none;
+      margin: 50px 0;
+      text-align: center;
+      font-size: 2rem;
+      border: 1px solid #000;
+      padding: 20px 0;
+      &:hover {
+        background: #000;
+        a {
+          color: #fff;
+        }
+      }
+      @media all and (max-width: 1400px) {
+        display: block;
+      }
+      @media all and (max-width: 400px) {
+        font-size: 1.4rem;
+        padding: 10px 0;
+        margin: 20px 0;
+      }
+    }
+  }
+}

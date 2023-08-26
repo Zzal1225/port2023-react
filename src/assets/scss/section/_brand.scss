@@ -1,0 +1,71 @@
+#brand {
+  padding: 5.208% 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  &::after {
+    content: "";
+    width: 1px;
+    background: #ddd;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    @media all and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .inner {
+    @media all and (max-width: 1200px) {
+      max-width: calc(100% - 20.833%);
+      > div {
+        width: 100%;
+      }
+    }
+    .brand_txt {
+      width: calc((100% - 100px) / 2);
+      float: left;
+      padding: 100px 0;
+      height: 100%;
+      .btn_view {
+        text-align: center;
+        a {
+          font-size: 2rem;
+          color: #999;
+          text-decoration: underline;
+          font-family: "DM Serif Text";
+        }
+      }
+      @media all and (max-width: 1200px) {
+        padding: 0 0 30px;
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+    .brand_img {
+      width: calc((100% - 100px) / 2);
+      float: right;
+      .brand_list {
+        img {
+          width: 100%;
+        }
+        .slick-dots {
+          position: absolute;
+          bottom: 5%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 5;
+          li {
+            display: inline-block;
+            margin: 0 5px;
+          }
+        }
+      }
+      @media all and (max-width: 1200px) {
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+}
